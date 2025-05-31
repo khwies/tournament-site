@@ -1,0 +1,93 @@
+/* خط كايرو */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header, footer {
+  padding: 20px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.tournament {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.95);
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  color: #333;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.tournament img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tournament .info {
+  padding: 1rem;
+  text-align: right;
+  max-width: 500px;
+}
+
+.tournament ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tournament li {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.container {
+  background-color: rgba(255,255,255,0.1);
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.qr {
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+a.button {
+  background-color: white;
+  color: #dc2743;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+a.button:hover {
+  background-color: #fce3ec;
+  color: #bc1888;
+}
